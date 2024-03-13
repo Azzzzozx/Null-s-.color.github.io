@@ -13,7 +13,7 @@
   
   <img src="Html.jpg" width="300px">
 
-  <button onclick="copyText()">نسخ النص</button>
+  <button onclick="copyText()">نسخ النص الأول</button>
 
   <script>
     function copyText() {
@@ -24,27 +24,28 @@
       textarea.select();
       document.execCommand("copy");
       document.body.removeChild(textarea);
-      alert("تم نسخ الكود بنجاح!");
+      alert("تم نسخ الكود الأول بنجاح!");
     }
   </script>
+
+  <img src="Html2.jpg" width="300px">
+  <button onclick="copyText2()">نسخ النص الثاني</button>
+
+  <script>
+    function copyText2() {
+      var text = "<cffcc00>م<cff9900>ن<cff6600>و<cff3300>ر/ه𝄞<cff0100>خد<ccc0032>/ي𝄞⃟❦☺︎<c990065>/حلا<c660098>وه🍭<c7>/وبس✨</c>";
+      var textarea = document.createElement("textarea");
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textarea);
+      alert("تم نسخ الكود الثاني بنجاح!");
+    }
+  </script>
+
+  <p style="color:yellow;font-size:30px;text-align:center;">الموقع تحت التطوير........</p>
 </body>
 
 </html>
 
-<img src="Html2.jpg" width="300px">
-<button onclick="copyText()">نسخ النص</button>
-
-<script>
-  function copyText() {
-    var text = "<cffcc00>م<cff9900>ن<cff6600>و<cff3300>ر/ه𝄞<cff0100>خد<ccc0032>/ي𝄞⃟❦☺︎<c990065>/حلا<c660098>وه🍭<c7>/وبس✨</c>";
-    var textarea = document.createElement("textarea");
-    textarea.value = text;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textarea);
-    alert("تم نسخ الكود بنجاح!");
-  }
-</script>
-
-<p style="color:yellow;font-size:30px;text-align:center;">الموقع تحت التطوير........</p>
