@@ -13,18 +13,12 @@
   
   <img src="Html.jpg" width="300px">
 
-  <button onclick="copyText()">نسخ النص الأول</button>
+  <button onclick="copyText1()">نسخ النص الأول</button>
 
   <script>
-    function copyText() {
+    function copyText1() {
       var text = "<cffcc00>م<cff9900>ن<cff6600>و<cff3300>ࢪ/ه🌨<cff0100>خ<ccc0032>د/ي🥥🍷🍡<c990065>H<c660098>Å<c3300cb>P<c6>P</c>Ÿ<c3>🍂وشكرا</c>✨";
-      var textarea = document.createElement("textarea");
-      textarea.value = text;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand("copy");
-      document.body.removeChild(textarea);
-      alert("تم نسخ الكود الأول بنجاح!");
+      copyText(text);
     }
   </script>
 
@@ -34,13 +28,17 @@
   <script>
     function copyText2() {
       var text = "<cffcc00>م<cff9900>ن<cff6600>و<cff3300>ر/ه𝄞<cff0100>خد<ccc0032>/ي𝄞⃟❦☺︎<c990065>/حلا<c660098>وه🍭<c7>/وبس✨</c>";
+      copyText(text);
+    }
+
+    function copyText(text) {
       var textarea = document.createElement("textarea");
       textarea.value = text;
       document.body.appendChild(textarea);
       textarea.select();
       document.execCommand("copy");
       document.body.removeChild(textarea);
-      alert("تم نسخ الكود الثاني بنجاح!");
+      alert("تم نسخ الكود بنجاح!");
     }
   </script>
 
@@ -48,4 +46,3 @@
 </body>
 
 </html>
-
