@@ -30,19 +30,21 @@
 </body>
 
 </html>
-<img src=Html2.jpg width=300px>
+
+<img src="Html2.jpg" width="300px">
 <button onclick="copyText()">نسخ النص</button>
 
-  <script>
-    function copyText() {
-      var text = "<cffcc00>م<cff9900>ن<cff6600>و<cff3300>ر/ه𝄞<cff0100>خد<ccc0032>/ي𝄞⃟❦☺︎<c990065>/حلا<c660098>وه🍭<c7>/وبس✨</c>";
-      var textarea = document.createElement("textarea");
-      textarea.value = text;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand("copy");
-      document.body.removeChild(textarea);
-      alert("تم نسخ الكود بنجاح!");
-    } 
+<script>
+  function copyText() {
+    var text = "<cffcc00>م<cff9900>ن<cff6600>و<cff3300>ر/ه𝄞<cff0100>خد<ccc0032>/ي𝄞⃟❦☺︎<c990065>/حلا<c660098>وه🍭<c7>/وبس✨</c>";
+    var textarea = document.createElement("textarea");
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("تم نسخ الكود بنجاح!");
+  }
+</script>
 
-<p style="color:yellowfont-size:30px;text-align:center;">الموقع تحت التطوير........</p>
+<p style="color:yellow;font-size:30px;text-align:center;">الموقع تحت التطوير........</p>
